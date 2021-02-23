@@ -1,0 +1,11 @@
+# Don't add files that are auto-generated
+mysite/mysite/static/admin/*
+mysite/mysite/root/*
+
+# No pycache
+mysite/mysite/__pycache__
+mysite/mysite/__pycache__/*
+mysite/mysite/__pycache__/settings.cpython-38.pyc
+mysite/mysite/__pycache__/settings.cpython-39.pyc
+*.pyc
+mysite/mysite/__pycache__/settings.cpython-38.pyc
