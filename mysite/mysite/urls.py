@@ -26,4 +26,5 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon/favicon.svg')),
+    
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
