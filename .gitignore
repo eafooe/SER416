@@ -8,3 +8,6 @@ mysite/mysite/__pycache__/*
 *.pyc
 *.pyc
 mysite/mysite/__pycache__/__init__.cpython-38.pyc
+
+# No vscode
+.vscode
