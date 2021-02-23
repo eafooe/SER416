@@ -1,9 +1,15 @@
 
 {% extends 'base.html' %}
+{% load static %}
+    {% block css %}
+    
+    <link rel="stylesheet" src="{% static '/styles/index.css' %}" type="text/css">
+    {% endblock css %}
     {% block title %}
     <title>{{ title }}</title>
     {% endblock title %}
-{% block content %}
+    
+    {% block content %}
     <div class="container">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at ante a quam gravida pulvinar. Aenean quis arcu viverra, pretium ante a, rhoncus magna. Vivamus varius fringilla neque. Nullam nec mattis dolor. Donec bibendum neque eu porta dictum. Curabitur fringilla turpis tortor, a malesuada diam scelerisque ut. Cras aliquet ut libero ut mollis.
 
@@ -23,21 +29,21 @@ Maecenas vehicula risus consectetur nisl interdum tristique. Integer ac tellus s
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="{% static 'images/priscilla-du-preez-Q7wGvnbuwj0-unsplash.jpg' %}" class="d-block w-100" alt="Outdoor venue">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="{% static 'images/jeswin-thomas-z4A6Vdg_4RE-unsplash.jpg' %}" class="d-block w-100" alt="Shop classes">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="{% static 'images/jonathan-chng-6UV9h_A9Vjk-unsplash.jpg' %}" class="d-block w-100" alt="Pool">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

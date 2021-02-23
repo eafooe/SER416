@@ -18,7 +18,12 @@ from django.conf.urls import url
 from django.urls import include, path
 
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
+from django.views.generic.base import RedirectView
+from django.contrib.staticfiles.storage import staticfiles_storage
 
 urlpatterns = [
-    url(r'^$', views.home, name='home')
-]
+    url(r'^$', views.home, name='home'),
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon/favicon.svg')),
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
