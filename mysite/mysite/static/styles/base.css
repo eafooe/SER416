@@ -1,18 +1,55 @@
 body, html {
-    height:100%;
+    height: 100vh;
+} 
+
+
+.header-icon{
+    vertical-align: text-bottom;
+    padding-left:25px;
 }
 
-#bootstrap-overrides .container {
-    overflow-y: scroll;
-    height: calc(100% - 160px);
-    margin-bottom: 5px;
+.hoverable:hover {
+    cursor: pointer;
 }
-#bootstrap-overrides .footer {
-    height:80px;
-    overflow-y:hidden;
-    margin-top: -5px;
+/* #bootstrap-overrides .my-footer {
+   
+    margin-bottom: -15px;
+} */
+
+#bootstrap-overrides .bg-primary {
+    background-color: #a6dfd5 !important;
 }
+
+#bootstrap-overrides .container-fluid {
+    top:60px;
+    height: calc(100vh - 60px);
+    width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    position:fixed;
+}
+#bootstrap-overrides .navbar {
+    height: 60px;
+    width: 100vw;
+    position:fixed;
+}
+
+#bootstrap-overrides .main {
+    padding-bottom: 0px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    margin: 0px;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+
+#sidebar-container > ul > li {
+    border-radius: 0px;
+}
+
 .btn-primary {
     background-color: #E0494B !important;
     border-color: #9E0F13  !important;
 }
+
