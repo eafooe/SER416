@@ -1,6 +1,10 @@
 body, html {
     height: 100vh;
+    font-family: Ubuntu-Medium,Arial,Helvetica,sans-serif;
 } 
+html {
+    visibility: hidden;
+}
 
 
 .header-icon{
