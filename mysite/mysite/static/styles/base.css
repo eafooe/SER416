@@ -1,15 +1,25 @@
 body, html {
     height: 100vh;
-    font-family: Ubuntu-Medium,Arial,Helvetica,sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
 html {
     visibility: hidden;
 }
 
+p {
+    font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+}
+.coin {
+    padding-bottom: 0.125em;
+}
 
 .header-icon{
     vertical-align: text-bottom;
     padding-left:25px;
+}
+
+.bolded {
+    font-weight: bold;
 }
 
 .hoverable:hover {

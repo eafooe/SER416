@@ -31,20 +31,22 @@
         <!-- Right-aligned links/buttons -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/donate">Donate</a>
-                </li>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link bolded" href="/donate">
+                        <img src="{% static '/favicon/coin-logo.svg' %}" class="coin mr-1">Donate&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                </li>  -->
 
                 {% if user.is_authenticated %}
                 {% else %}
-                <a class="btn btn-outline-dark" href="/login">Login</a>
-                <a class="btn btn-primary ml-2 mr-2" href="#">Register</a>
+                <a class="btn btn-dark" href="/login">Log in</a>
+                <a class="btn btn-primary ml-2 mr-2" href="#">Sign up</a>
                 {% endif %}
             </ul>
         </div>
@@ -81,7 +83,9 @@
                         </a>
                         <a href="/donate" class="bg-light list-group-item list-group-item-action text-dark">
                             <div class="d-flex w-100 justify-content-start align-items-center">
-                                <span class="fas fa-dollar-sign fa-fw mr-3 menu-icon"></span>
+                                <!-- <span class="fas fa-dollar-sign fa-fw mr-3 menu-icon"></span> -->
+                                <!--Source: freepik.com-->
+                                <span class="fa-fw mr-3 menu-icon coin"><img src="{% static '/favicon/coin-logo.svg' %}"></span>
                                 <span class="menu-collapsed">Donate</span>
                             </div>
                         </a>
@@ -94,7 +98,7 @@
                         <a href="/programs" class="bg-light list-group-item list-group-item-action text-dark">
                             <div class="d-flex w-100 justify-content-start align-items-center">
                                 <span class="fas fa-hands-helping fa-fw mr-3 menu-icon"></span>
-                                <span class="menu-collapsed">Programs & Services</span></span>
+                                <span class="menu-collapsed">Programs & Services</span>
                             </div>
                         </a>
                         <a href="/facilities" class="bg-light list-group-item list-group-item-action text-dark">
